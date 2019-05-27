@@ -1,0 +1,26 @@
+{
+  "fitbit": {
+    "appUUID": "1e9b648d-bd0f-4a57-8e24-5803bdbb9363",
+    "appType": "app",
+    "appDisplayName": "heart-rate-client",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_internet",
+      "run_background"
+    ],
+    "buildTargets": [
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "heart-rate-client"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.0"
+  }
+}

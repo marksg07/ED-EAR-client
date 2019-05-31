@@ -7,7 +7,7 @@ import { display } from "display";
 messaging.peerSocket.onopen = function() {
   if (HeartRateSensor) {
     console.log("This device has a HeartRateSensor!");
-    const hrm = new HeartRateSensor({frequency: 1});
+    const hrm = new HeartRateSensor({frequency: 0.2});
     console.log("turning off app tm")
     me.appTimeoutEnabled = false;
     display.on = false;
